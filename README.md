@@ -4,7 +4,7 @@ Web API demo with MySQL support
 
 ## Installation
 
-Execute `contact.sql`. This creates a new table `contact`. A schema named `contacts` must exist.
+Execute `contact.sql`. This creates a new table `contact`. A schema named `contacts` must exist. Make sure to update database credentials in `main.go`.
 
 ## Endpoints
 
