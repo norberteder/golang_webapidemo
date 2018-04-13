@@ -23,6 +23,6 @@ func handleRequests() {
 }
 
 func main() {
-	models.InitializeDatabase("user:password@tcp(127.0.0.1:3306)/contacts")
+	models.InitializeDatabase("user:password@tcp(database:3306)/contacts")
 	handleRequests()
 }
