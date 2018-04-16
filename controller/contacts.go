@@ -2,7 +2,7 @@ package controller
 
 import (
 	"net/http"
-	"sampleWebApi/models"
+	"golang_webapidemo/models"
 	"encoding/json"
 	"log"
 )

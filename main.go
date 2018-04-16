@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"log"
 	"github.com/gorilla/mux" // specify used verbs
-	"sampleWebApi/models"
-	"sampleWebApi/controller"
+	"golang_webapidemo/models"
+	"golang_webapidemo/controller"
 )
 
 func defaultPage(w http.ResponseWriter, r *http.Request) {
@@ -23,6 +23,6 @@ func handleRequests() {
 }
 
 func main() {
-	models.InitializeDatabase("user:password@tcp(127.0.0.1:3306)/contacts")
+	models.InitializeDatabase("user:password@tcp(database:3306)/contacts")
 	handleRequests()
 }
